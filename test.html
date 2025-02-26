@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>율도원 기숙사 찾기</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>율도원 기숙사 찾기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stype.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>당신의 생년월일을 알려주세요</h1>
-        <input type="date" id="birthdate">
-        <button onclick="calculateDaysFrom2001()">나의 기숙사 찾기 시작!</button>
-        <p id="result"></p>
-        <div id="animation"></div>
+  <div class="container">
+
+    <!-- 입력 영역 -->
+    <div id="inputContainer">
+      <h1>당신의 생년월일을 알려주세요</h1>
+
+      <input type="text" id="name" placeholder="이름을 입력해주세요"/>
+
+      <input type="date" id="birthdate"/>
+
+      <button onclick="calculateDaysFrom2001()" id="find_button">나의 기숙사 찾기 시작!</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- 결과 영역 (초기에는 숨김 처리) -->
+    <div id="resultContainer" style="display: none;">
+
+      <p id="result"></p>
+
+      <button onclick="resetForm()" id="redo_button">다시하기</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
