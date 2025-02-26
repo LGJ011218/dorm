@@ -34,7 +34,7 @@ h1 {
     font-family: "Nanum Pen Script", serif;
 }
 
-#find_button{
+#findButton{
     text-align: center;
     width: 280px;
     font-size: 20pt;
@@ -46,7 +46,13 @@ h1 {
     font-size: 50pt;
 }
 
-#redo_button{
+#resultImage{
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+#redoButton{
     text-align: center;
     width: 150px;
     font-size: 20pt;
